@@ -2,7 +2,7 @@
 def usuario():
     edad = int(input('Cual es su edad: '))
     genero = input('Cual es su genero (hombre o mujer): ')
-    peso = int(input('Cuanto en pesa en kg: '))
+    peso = int(input('Cuanto pesa en kg: '))
     altura = int(input('Cual es su altura en cm: '))
 
     if genero == 'hombre':
@@ -16,8 +16,8 @@ def usuario():
         at = 1.85 * altura
         e = 4.68 * edad
 
-    #GEB mujer= 665 + (9.56 x p) + (1.85 x cm) – (4.7 x anios) + actividad
-    #GEB hombre = 66 + (13.75 x p) + (5.003 x cm) - (6.77 x anios) + actividad
+    #GEB mujer= 665.1 + (9.56 x p) + (1.85 x cm) – (4.7 x anios) + actividad
+    #GEB hombre = 66.5 + (13.75 x p) + (5.003 x cm) - (6.77 x anios) + actividad
     GEB_resultado = n1 + at + p - e
     return(int(GEB_resultado))
 

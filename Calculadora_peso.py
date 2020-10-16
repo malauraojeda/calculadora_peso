@@ -16,8 +16,8 @@ def usuario():
         at = 1.85 * altura
         e = 4.68 * edad
 
-    #GEB mujer= 665 + (9.56 x p) + (1.85 x cm) – (4.7 x anios)
-    #GEB hombre = 66 + (13.75 x p) + (5.003 x cm) - (6.77 x anios)
+    #GEB mujer= 665 + (9.56 x p) + (1.85 x cm) – (4.7 x anios) + actividad
+    #GEB hombre = 66 + (13.75 x p) + (5.003 x cm) - (6.77 x anios) + actividad
     GEB_resultado = n1 + at + p - e
     return(int(GEB_resultado))
 
@@ -35,7 +35,7 @@ def calcular_actividad(GEB_resultado):
 
     return(int(actividad_nivel))
 
-
+# Lo mas saludable a la hora de perder o ganar peso, se recomienda que sean 500kcal por dia. 
 def ganar_o_perder(actividad_nivel):
     meta = input('Quiere perder, mantener, o ganar peso: ')
 
